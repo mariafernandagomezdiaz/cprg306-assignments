@@ -5,7 +5,8 @@ export default function Week2() {
     return (
         <main>
             <h1 className="text-xl">CPRG 306: Web Development 2 - Assignments</h1>
-            <Link className={linkStyles} href="/week-2"> Week 2</Link>
+            <li><Link className={linkStyles} href="/week-2"> Week 2</Link></li>
+            <li><Link className={linkStyles} href="/week-3"> Week 3</Link></li>
         </main>
     );
 }
