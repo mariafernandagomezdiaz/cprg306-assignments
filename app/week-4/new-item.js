@@ -30,7 +30,7 @@ export default function NewItem() {
   const handleCategory = (event) => setCategory(event.target.value);
 
   return (
-    <form onSubmit={handleSubmit} className="p-4 bg-blue-300 text-black rounded">
+    <form onSubmit={handleSubmit} className="p-4 bg-blue-300 text-black rounded inline-block">
       <div className="flex flex-col space-y-4">
         <div>
           <input type="text" placeholder="Item name" onChange={handleName} value={name} required
