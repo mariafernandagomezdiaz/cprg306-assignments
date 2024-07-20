@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Item from './item';
+import Link from "next/link";
 
 export default function ItemList({ items, onItemSelect }) {
   const [sortBy, setSortBy] = useState('name');
@@ -37,8 +38,8 @@ export default function ItemList({ items, onItemSelect }) {
 
   return (
     <div>
-      <div>
-        <Link href="" className=" px-4 py-2  text-white rounded bg-blue-600 hover:bg-blue-400">Log Out</Link>
+      <div className="flex justify-end mb-5">
+        <Link href="./" className="px-4 py-2 text-white rounded bg-blue-600 hover:bg-blue-400">Log Out</Link>
       </div>
       <section className="flex mb-5 px-10 py-5 bg-blue-300 text-slate-900">
         <div className="flex-1">
